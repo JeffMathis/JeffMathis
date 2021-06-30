@@ -28,7 +28,7 @@ img {
 }
 
 .pic2 {
-    width: 400px;
+    width: 350px;
 }
 
 .pic3 {
@@ -49,4 +49,8 @@ button {
 a :hover {
     background: black;
     color: white;
+}
+
+p {
+    text-align: center;
 }
