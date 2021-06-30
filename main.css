@@ -1,0 +1,52 @@
+* {
+    margin: auto;
+    font-size: large;
+    text-decoration: none;
+}
+
+.spacer {
+    display: block;
+    height:40px;
+    width: 100%;
+    background: rgb(229, 143, 255);
+}
+
+.background {
+    background: rgb(229, 143, 255);
+    height: 315px;
+    margin-bottom: 50px;
+    display: block;
+}
+
+
+img {
+    display: block;
+}
+
+.pic1 {
+    width: 200px;
+}
+
+.pic2 {
+    width: 400px;
+}
+
+.pic3 {
+    width: 300px;
+    margin: 10px auto 100px auto;
+}
+
+
+button {
+    background: rgb(229, 143, 255);
+    text-align: center;
+    border: 1px solid black;
+    padding: 10px 15px;
+    margin: 10px auto;
+    display: block;
+}
+
+a :hover {
+    background: black;
+    color: white;
+}
