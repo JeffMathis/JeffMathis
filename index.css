@@ -143,7 +143,18 @@ footer {
     opacity: 0%;
     transition-duration: 700ms;
     transition-timing-function: ease-out;
+}
 
+.fadeoutright {
+    transform: translateX(50px);
+    opacity: 0%;
+    transition-duration: 700ms;
+    transition-timing-function: ease-out;
+}
+
+.fadeinright {
+    transition-duration: 700ms;
+    opacity: 100%;
 }
 
 .h2 {
