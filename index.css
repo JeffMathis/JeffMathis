@@ -183,6 +183,7 @@ footer {
     .desktopIcon {
         display: block;
         width: 35vw;
+        margin-top: 20px;
     }
 
     #seoIconWrapper {
@@ -190,6 +191,6 @@ footer {
     }
 
     #seoDesktopIcon {
-        margin: 0 5vw;
+        margin: 20px 5vw;
     }
 }
