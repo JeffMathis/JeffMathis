@@ -127,7 +127,27 @@ footer {
 }
 
 .disapear {
-    display: none;
+    transition-duration: 500ms;
+    transform: translateX(100%);
+    opacity: 0%;
+    transition-timing-function: ease-in;
+}
+
+.fadein {
+    transition-duration: 700ms;
+    opacity: 100%;
+}
+
+.fadeout {
+    transform: translateX(-50px);
+    opacity: 0%;
+    transition-duration: 700ms;
+    transition-timing-function: ease-out;
+
+}
+
+.h2 {
+    display: block;
 }
 
 @media screen and (min-width: 1030px) {
