@@ -2,7 +2,7 @@ const hirebtn = document.querySelector(".floatingHire");
 const hiresection = document.querySelector(".upworkWrapper");
 const sectionFade = document.querySelectorAll(".sectionFade");
 const sectionObserved = document.querySelectorAll(".sectionObserved");
-const sectionFadeRight = document.querySelector(".sectionFadeRight")
+const sectionFadeRight = document.querySelectorAll(".sectionFadeRight")
 
 const options = {
     threshold: 0.40
@@ -47,8 +47,12 @@ const sectionObserver2 = new IntersectionObserver(function (entries, sectionObse
 }, sectionoptions);
 
 
-sectionObserver2.observe(sectionFadeRight)
 hirebtnobserver.observe(hiresection);
+
 sectionFade.forEach(sectionFade => {
     sectionObserver.observe(sectionFade);
+});
+
+sectionFadeRight.forEach(sectionFadeRight => {
+    sectionObserver2.observe(sectionFadeRight);
 });

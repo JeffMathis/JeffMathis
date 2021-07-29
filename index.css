@@ -8,7 +8,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 4vh;
+    font-size: x-large;
     width: 100%;
 }
 
@@ -48,6 +48,7 @@ footer {
     margin: 20px 10px;
     padding: 10px;
     font-size: 4vh;
+    overflow: hidden;
 }
 
 .login {
@@ -136,6 +137,7 @@ footer {
 .fadein {
     transition-duration: 700ms;
     opacity: 100%;
+    transition-timing-function: ease-in;
 }
 
 .fadeout {
@@ -154,11 +156,15 @@ footer {
 
 .fadeinright {
     transition-duration: 700ms;
-    opacity: 100%;
+    transition-timing-function: ease-in;
 }
 
 .h2 {
     display: block;
+}
+
+.whyme {
+    margin-top: 30px;
 }
 
 @media screen and (min-width: 1030px) {
@@ -183,6 +189,7 @@ footer {
     .desktopIcon {
         display: block;
         width: 35vw;
+        margin-top: 20px;
     }
 
     #seoIconWrapper {
@@ -190,6 +197,7 @@ footer {
     }
 
     #seoDesktopIcon {
-        margin: 0 5vw;
+        margin: 20px 5vw;
+
     }
 }
