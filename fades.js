@@ -34,17 +34,17 @@ const sectionObserver = new IntersectionObserver(function (entries, sectionObser
     });
 }, sectionoptions);
 
-const sectionObserver2 = new IntersectionObserver(function (entries, sectionObserver2) {
-    entries.forEach(entry => {
-        if (!entry.isIntersecting) {
-            entry.target.classList.add("fadeoutright");
-        } else {
-            entry.target.classList.remove("fadeoutright");
-            entry.target.classList.add("fadeinright");
-            sectionObserver2.unobserve(entry.target);
-        }
-    });
-}, sectionoptions);
+// const sectionObserver2 = new IntersectionObserver(function (entries, sectionObserver2) {
+//     entries.forEach(entry => {
+//         if (!entry.isIntersecting) {
+//             entry.target.classList.add("fadeoutright");
+//         } else {
+//             entry.target.classList.remove("fadeoutright");
+//             entry.target.classList.add("fadeinright");
+//             sectionObserver2.unobserve(entry.target);
+//         }
+//     });
+// }, sectionoptions);
 
 
 hirebtnobserver.observe(hiresection);
@@ -53,6 +53,6 @@ sectionFade.forEach(sectionFade => {
     sectionObserver.observe(sectionFade);
 });
 
-sectionFadeRight.forEach(sectionFadeRight => {
-    sectionObserver2.observe(sectionFadeRight);
-});
+// sectionFadeRight.forEach(sectionFadeRight => {
+//     sectionObserver2.observe(sectionFadeRight);
+// });
