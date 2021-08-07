@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Baloo 2', cursive, arial, sans-serif;
+    font-family: 'Hahmlet', arial, sans-serif;
 }
 
 /*----Intro Section----*/
@@ -9,7 +9,7 @@
 .firstSection {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-content: center;
     font-size: x-large;
     width: 100%;
 }
@@ -24,7 +24,7 @@
 .introText {
     color: white;
     padding-right: 10px;
-    flex: 2;
+    margin: 0 10px;
     flex-direction: column;
 }
 
@@ -33,10 +33,10 @@
     background: rgba(0, 0, 0, 0.500);
     position: absolute;
     width: 100%;
-    text-align: center;
-    margin-top: 60px;
-    padding: 30px 0;
     flex-direction: column;
+    height: 80vh;
+    text-align: center;
+    justify-content: center;
 }
 
 /*----Intro Section----*/
@@ -56,12 +56,6 @@ footer {
     overflow: hidden;
 }
 
-.toph2 {
-    text-align: center;
-    padding-top: 15px;
-    font-size: xx-large;
-}
-
 .seo, .webDesign, .maintenance {
     display: flex;
     align-items: center;
@@ -78,33 +72,37 @@ footer {
 .upworkbtn {
     text-decoration: none;
     padding: 10px 20px;
-    background: #14a800;
+    background: rgb(238, 16, 16);
     border-radius: 7px;
     color: white;
     transition-duration: 500ms;
     width: 10vw;
+    font-weight: bold;
 }
 
 .upworkbtn:hover {
-    background: black;
-    color: #14a800;
+    background: rgb(255, 87, 87);
+    color:black;
 }
 
 .upworkWrapper {
-    background: #bfffb7;
+    background: #eeeeee;
     margin: 0;
-    padding-bottom: 30px;
-    border-top: 3px solid black;
+    padding: 40px 0;
     align-items: center;
+    color: black;
+    font-weight: bold;
+    border-top: 2px solid black;
+    box-shadow: 0px 0px 5px black;
 }
 /*End Upwork Section*/
 
-/*End floating hire button*/
+/*Floating hire button*/
 .floatingHire {
     position: fixed;
     bottom: 0;
     right: 0;
-    background: #14a800;
+    background: rgb(238, 16, 16);
     box-shadow: 3px 3px #666161;
     margin: 0 20px 20px 0;
     font-size: large;
@@ -113,11 +111,12 @@ footer {
     text-decoration: none;
     border-radius: 7px;
     transition-duration: 500ms;
+    font-weight: bold;
 }
 
 .floatingHire:hover {
-    background: black;
-    color:#14a800;
+    background: rgb(255, 87, 87);
+    color:black;
 }
 /*End floating hire button*/
 
@@ -130,6 +129,7 @@ footer {
 }
 
 .fadein {
+    display: block;
     transition-duration: 700ms;
     opacity: 100%;
     transition-timing-function: ease-in;
@@ -138,8 +138,7 @@ footer {
 .fadeout {
     transform: translateY(50px);
     opacity: 0%;
-    transition-duration: 700ms;
-    transition-timing-function: ease-in;
+
 }
 
 /* ----End JS Fades */
@@ -152,19 +151,23 @@ footer {
     }
 
     .icons {
-        max-height: 20vh;
-        max-width: 20vh;
+        height: 130px;
+        width: 130px;
     }
 
     .upworkWrapper {
         flex-direction: column;
     }
 
-    .webDesign, .seo, .maintenance {
+    .webDesign, .seo, .maintenance > p{
         margin: 0 20px;
     }
 
-    .webDesign {
-        flex-grow: 5;
+    .introTextWrapper {
+        align-items: flex-end;
+    }
+
+    .introText {
+        margin: 0 30px;
     }
 }
